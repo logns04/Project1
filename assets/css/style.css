@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/* Khoi phouc lai co chu mac dinh theo rem  */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* =====Thuoc tinh ap dung chung ca website */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  height: 50px;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  background-color: black;
+  border-radius: 24.5px;
+  line-height: 50px;
+}
+/* ============Header========== */
+.header {
+  background: #e3e1db;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+/* The body la con cua header */
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+/* ul la con cua nav */
+.nav ul {
+  display: flex;
+}
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: black;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  left: 21px;
+  bottom: 6px;
+  border-radius: 1px;
+  background-color: black;
+  display: block;
+  position: absolute;
+}
+
+.header .btn-sign-up {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
+}
